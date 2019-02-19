@@ -1,0 +1,43 @@
+.navBar {
+    grid-area: nav-bar;
+
+}
+
+.menuList {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem {
+    border: 2px solid #e0e040;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #8b0000;
+}
+
+.menuItem:last-of-type {
+    margin-bottom: 0;
+}
+
+.menuLink {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.menuLink:hover {
+    text-decoration: underline;
+    color: #000;
+    font-style: italic;
+}
+
+.active {
+    background-color: #e0e040;
+    border: 2px solid #8b0000;
+}

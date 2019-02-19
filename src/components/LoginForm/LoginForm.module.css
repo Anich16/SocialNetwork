@@ -1,0 +1,63 @@
+.formBlock {
+
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10%;
+    background-color: #dada16;
+    color: #8b0000;
+    font-size: 25px;
+    font-weight: 800;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.button:last-of-type {
+    margin-right: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+.fieldsBlock {
+
+    margin-top: 75px;
+}
+
+.label {
+    display: block;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+}
+
+.field {
+    display: block;
+    margin-top: 15px;
+    width: 45%;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.checkboxField {
+    padding-left: 15px;
+    display: inline-block;
+    margin-right: 135px;
+}
+
+.labelCheckbox {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.buttonLogin {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 800;
+}

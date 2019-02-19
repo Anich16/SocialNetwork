@@ -1,0 +1,27 @@
+.friendItem {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.friendItem:last-of-type {
+    margin-right: 0;
+}
+
+.friendLink {
+    color: #000;
+    text-decoration: none;
+}
+
+.photo {
+    border-radius: 50%;
+}
+
+.friendItem:hover .photo {
+    opacity: 0.5;
+}
+
+
+.friendItem:hover .friendLink {
+    color: darkred;
+    font-style: italic;
+}

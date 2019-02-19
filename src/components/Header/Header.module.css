@@ -1,0 +1,33 @@
+.header {
+    grid-area: header;
+    background-color: #8b0000;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #e0e040;
+}
+
+.logoImg {
+    width: 50px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.logoText {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 50px;
+    color: #dada16;
+    font-style: oblique;
+}
+
+.buttonExit {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: #e0e040;
+    font-weight: 600;
+}

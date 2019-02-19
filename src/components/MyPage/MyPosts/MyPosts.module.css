@@ -1,0 +1,21 @@
+.postForm {
+    margin-bottom: 40px;
+}
+.title {
+    font-size: 18px;
+    font-weight: 800;
+}
+.newText {
+    width: 100%;
+    font-size: 16px;
+    background: #f6e1c6;
+    margin-bottom: 15px;
+}
+
+.buttonSend {
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 15px;
+    background-color: #e0e040;
+    font-weight: 600;
+}

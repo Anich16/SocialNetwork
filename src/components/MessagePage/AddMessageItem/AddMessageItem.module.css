@@ -1,0 +1,12 @@
+.messageItem {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.messageIcon {
+    width: 80px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 50px;
+
+}

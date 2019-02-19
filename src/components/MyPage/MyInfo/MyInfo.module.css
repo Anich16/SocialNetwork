@@ -1,0 +1,27 @@
+.description {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+}
+
+.avatarPhoto {
+    width: 180px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+}
+
+.infoAbout {
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.info {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+}

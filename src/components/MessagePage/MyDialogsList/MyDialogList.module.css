@@ -1,0 +1,17 @@
+.dialogsList {
+    list-style: none;
+    padding: 0;
+}
+
+.dialogItem {
+    margin-top: 50px;
+}
+
+.dialogLink {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+}
