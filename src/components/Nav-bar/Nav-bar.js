@@ -18,13 +18,13 @@ let NavBar = (props) => {
                     <NavLink to="/messagePage" className={style.menuLink} activeClassName={style.active}>Messages</NavLink>
                 </li>
                 <li className={style.menuItem}>
-                    <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Friends</NavLink>
+                    <NavLink to="/friendsPage" className={style.menuLink} activeClassName={style.active}>Friends</NavLink>
                 </li>
                 <li className={style.menuItem}>
                     <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Groups</NavLink>
                 </li>
                 <li className={style.menuItem}>
-                    <NavLink to ="/#" className={style.menuLink} activeClassName={style.active}>Photos</NavLink>
+                    <NavLink to ="/photos" className={style.menuLink} activeClassName={style.active}>Photos</NavLink>
                 </li>
                 <li className={style.menuItem}>
                     <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Music</NavLink>

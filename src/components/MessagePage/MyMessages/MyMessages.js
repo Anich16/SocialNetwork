@@ -6,8 +6,8 @@ import style from "./MyMessages.module.css"
 
 let MyMessages = ({messages}) => {
 
-    let messageItem = messages.map((message, index) => {
-        return <AddMessageItem urlImg = {message.url} textMessage = {message.text} key = {index}/>
+    let messageItem = messages.map((message) => {
+        return <AddMessageItem urlImg = {message.url} textMessage = {message.text} key = {message.id}/>
     });
 
     return (

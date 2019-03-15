@@ -6,8 +6,8 @@ import PropTypes from "prop-types";
 
 
 let MyDialogsList = (props) => {
-        let dialogItem = props.dialogs.map((dialog, index) => {
-            return <AddDialogItem urlLink = {dialog.url} nameFriend = {dialog.name} key={index}/>
+        let dialogItem = props.dialogs.map((dialog) => {
+            return <AddDialogItem urlLink = {dialog.url} nameFriend = {dialog.name} key={dialog.id}/>
         });
 
     return (

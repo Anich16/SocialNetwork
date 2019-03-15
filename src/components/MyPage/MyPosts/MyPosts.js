@@ -8,16 +8,16 @@ import {addPostTextActionCreator, addPostActionCreator} from "../../../Redux/MyP
 let MyPosts = (props) => {
 
     let textareaElement = React.createRef();
-    let postItem = props.posts.map((post, index) => {
-        return <AddPostItem urlImage = {post.url} postText = {post.text} key = {index}/>
+    let postItem = props.posts.map((post) => {
+        return <AddPostItem urlImage = {post.url} postText = {post.text} key = {post.id}/>
     });
     let changeTextarea = ()=> {
       let text = textareaElement.current.value;
-      props.store.dispatch(addPostTextActionCreator(text));
+      props.addPostText(text);
     };
     let addPostItem = (e) => {
         e.preventDefault();
-        props.store.dispatch(addPostActionCreator());
+        props.addPost();
     };
 
     return (

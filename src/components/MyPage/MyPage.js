@@ -17,7 +17,7 @@ let MyPage = (props) => {
 
             {infoBlock}
 
-            <MyPosts posts={props.myPage.posts} store={props.store} newTextPost={props.newTextPost}/>
+            <MyPosts posts={props.myPage.posts} newTextPost={props.newTextPost} addPost={props.addPost} addPostText={props.addPostText}/>
         </div>
     )
 };

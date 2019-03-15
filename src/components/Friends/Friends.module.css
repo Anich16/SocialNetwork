@@ -1,0 +1,13 @@
+.friendsBlock {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.friendsItem {
+    width: 20%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+

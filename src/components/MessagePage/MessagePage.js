@@ -9,11 +9,11 @@ let MessagePage = (props) => {
     let textareaElement = React.createRef();
     let changeTextarea = () => {
       let text = textareaElement.current.value;
-      props.store.dispatch(addTextMessageActionCreator(text));
+      props.addTextMessage(text);
     };
     let addMessage = (e) => {
         e.preventDefault();
-        props.store.dispatch(addMessageElementActionCreator(textareaElement));
+        props.addMessageElement();
     };
 
     return (
