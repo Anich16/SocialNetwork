@@ -3,7 +3,7 @@ import AddMessageItem from "./AddMessageItem/AddMessageItem.js";
 import MyMessages from "./MyMessages/MyMessages.js";
 import MyDialogsList from "./MyDialogsList/MyDialogsList.js";
 import style from "./MessagePage.module.css";
-import {addMessageElementActionCreator, addTextMessageActionCreator} from "../../Redux/MessagesPage.reducer";
+import {addMessageElementActionCreator, addTextMessageActionCreator} from "../../Redux/MessagePage/MessagesPage.reducer";
 
 let MessagePage = (props) => {
     let textareaElement = React.createRef();

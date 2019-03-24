@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
-import MyPage from "../components/MyPage/MyPage";
+import MyPage from "../../components/MyPage/MyPage";
 import {addPostActionCreator, addPostTextActionCreator} from "./MyPage.reducer";
 
 let mapStateToProps = (state) => {

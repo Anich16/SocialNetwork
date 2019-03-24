@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import style from "./Nav-bar.module.css";
 import FriendsBlock from "./FriendsBlock/FriendsBlock.js"
 
@@ -24,7 +24,7 @@ let NavBar = (props) => {
                     <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Groups</NavLink>
                 </li>
                 <li className={style.menuItem}>
-                    <NavLink to ="/photos" className={style.menuLink} activeClassName={style.active}>Photos</NavLink>
+                    <NavLink to ="/photoPage" className={style.menuLink} activeClassName={style.active}>Photos</NavLink>
                 </li>
                 <li className={style.menuItem}>
                     <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Music</NavLink>
@@ -36,7 +36,9 @@ let NavBar = (props) => {
                     <NavLink to="/#" className={style.menuLink} activeClassName={style.active}>Settings</NavLink>
                 </li>
             </ul>
-            <FriendsBlock friendsList={props.navBar.friendsList}/>
+            <NavLink to="/friendsPage">
+                <FriendsBlock friendsList={props.navBar.friendsList}/>
+            </NavLink>
         </nav>
 
     )};

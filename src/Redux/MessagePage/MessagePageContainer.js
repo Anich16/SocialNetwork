@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from "react-redux";
-import MessagePage from "../components/MessagePage/MessagePage";
+import MessagePage from "../../components/MessagePage/MessagePage";
 import {addMessageElementActionCreator, addTextMessageActionCreator} from "./MessagesPage.reducer";
 
 let mapStateToProps = (state) => {

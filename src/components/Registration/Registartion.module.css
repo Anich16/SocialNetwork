@@ -1,0 +1,19 @@
+.registration {
+    display: block;
+    margin-top: 25px;
+    width: 650px;
+}
+
+.formBlock {
+    display: block;
+    width: 80%;
+    margin: 0 50%;
+    font-size: 20px;
+
+}
+
+.label {
+    display: block;
+    padding: 3px 2px;
+}
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Route, withRouter} from "react-router-dom";
 import './App.css';
 import Header from "./components/Header/Header.js";
 import NavBar from "./components/Nav-bar/Nav-bar.js";
@@ -7,32 +7,48 @@ import MyPage from "./components/MyPage/MyPage.js";
 import MessagePage from "./components/MessagePage/MessagePage";
 import Footer from "./components/Footer/Footer.js";
 import LoginForm from "./components/LoginForm/LoginForm.js"
-import MyPageContainer from "./Redux/MyPageContainer";
-import MessagePageContainer from "./Redux/MessagePageContainer";
-import NavBarContainer from "./Redux/NavBarContainer";
-import Friends from "./components/Friends/Friends";
-import FriendsContainer from "./Redux/FriendsContainer";
-import LoginContainer from "./Redux/LoginContainer";
+import MyPageContainer from "./Redux/MyPage/MyPageContainer";
+import MessagePageContainer from "./Redux/MessagePage/MessagePageContainer";
+import NavBarContainer from "./Redux/NavBar/NavBarContainer";
+import FriendsContainer from "./Redux/Friends/FriendsContainer";
+import LoginContainer from "./Redux/Login/LoginContainer";
+import {connect} from "react-redux";
+import HeaderContainer from "./components/Header/Header";
+import PhotoPageContainer from "./components/PhotoPage/PhotoPage";
 
 
-let App = (props) => {
-    return (
-        <div className="app-project">
+let MainPage = (props) => {
+    return <div className="app-project">
+        <HeaderContainer/>
+        <NavBarContainer/>
+        <main className="main">
+            <Route exact path="/" render={() => <MyPageContainer/>}/>
+            <Route exact path="/myPage" render={() => <MyPageContainer/>}/>
+            <Route exact path="/messagePage" render={() => <MessagePageContainer/>}/>
+            <Route exact path="/friendsPage" render={() => <FriendsContainer/>}/>
+            <Route exact path="/photoPage" render={()=> <PhotoPageContainer/>}/>
+        </main>
 
-
-                <Header/>
-                <NavBarContainer/>
-            <main className="main">
-                <Route exact path="/main" render={()=><MyPageContainer/>}/>
-                <Route exact path="/main/myPage" render={() => <MyPageContainer/>}/>
-                <Route exact path="/main/messagePage" render={() => <MessagePageContainer/>}/>
-                <Route exact path="/main/friendsPage" render={() => <FriendsContainer/>}/>
-                <Route exact path="/login" render={() => <LoginContainer />}/>
-            </main>
-
-            <Footer/>
-        </div>
-    )
+        <Footer/>
+    </div>
 };
 
-export default App;
+let App = (props) => {
+        {if (props.isAuth){
+           return <MainPage/>
+    } else {
+            return   <LoginContainer/>
+    }}
+
+
+};
+
+let mapStateToProps = (state) =>{
+    return{
+        isAuth: state.auth.isAuth
+    }
+};
+
+let AppContainer = connect (mapStateToProps, null) (App);
+
+export default withRouter(AppContainer);

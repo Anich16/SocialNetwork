@@ -1,8 +1,17 @@
 import React from 'react';
 import style from "./Header.module.css"
 import {NavLink} from "react-router-dom";
+import AvatarPhoto from "./AvatarPhoto/AvatarPhoto.js";
+import AvatarPhotoContainer from "../../Redux/AvatarPhoto";
+import {connect} from "react-redux";
+import {logOut} from "../../Redux/authReducer";
 
-let Header = () => {
+let Header = (props) => {
+
+    let leavePage = (e) => {
+        props.logOut(false)
+    };
+
     return (
         <header className={style.header}>
             <div className={style.logoBlock}>
@@ -12,16 +21,28 @@ let Header = () => {
                 <span className={style.logoText}>MonAmora</span>
             </div>
             <div className={style.exitBlock}>
-                <NavLink to="/myPage">
-                    <img src="http://frozen-info.ru/img_biografija/Olaf.jpg"
-                     width='50' height="50px"
-                     alt="Avatar"
-                              className={style.photo}/>
-                    </NavLink>
-                <button className={style.buttonExit}>Exit</button>
+                <AvatarPhotoContainer />
+
+                <button className={style.buttonExit} onClick={leavePage}>Exit</button>
             </div>
         </header>
 )};
 
-    export default Header;
+    let mapStateToProps = (state) => {
+      return {
+          isAuth: state.auth.isAuth
+      }
+    };
+
+    let mapDispatchToProps =(dispatch) => {
+        return {
+            logOut: (value) => {
+                dispatch(logOut(value))
+            }
+        }
+    };
+
+
+let HeaderContainer = connect (mapStateToProps, mapDispatchToProps) (Header);
+    export default HeaderContainer;
 

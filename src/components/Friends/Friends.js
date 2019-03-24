@@ -1,6 +1,6 @@
 import React from 'react';
 import * as axios from "axios";
-import {statuses} from "../../Redux/Friends.reducer";
+import {statuses} from "../../Redux/Friends/Friends.reducer";
 import style from "./Friends.module.css";
 
 

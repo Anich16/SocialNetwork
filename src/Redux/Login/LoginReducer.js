@@ -1,9 +1,10 @@
 import * as axios from "axios";
-import {setAuth} from "./authReducer";
+import {setAuth} from "../authReducer";
 
 const LOGIN = "SN/LOGINFORM/LOGIN";
 const SET_STATUS = "SN/LOGINFORM/SET_STATUS";
 const SET_MESSAGE = "SN/LOGINFORM/SET_MESSAGE";
+
 
 export const statuses = {
     INIT: "INIT",
@@ -67,5 +68,6 @@ export let setMessage =(message) => {
         message
     }
 };
+
 
 export default loginReducer;

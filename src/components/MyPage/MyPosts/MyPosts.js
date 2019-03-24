@@ -2,7 +2,7 @@ import React from 'react';
 import AddPostItem from "../AddPostItem/AddPostItem.js";
 import style from "./MyPosts.module.css";
 import PropTypes from "prop-types";
-import {addPostTextActionCreator, addPostActionCreator} from "../../../Redux/MyPage.reducer.js";
+import {addPostTextActionCreator, addPostActionCreator} from "../../../Redux/MyPage/MyPage.reducer.js";
 
 
 let MyPosts = (props) => {
@@ -25,7 +25,7 @@ let MyPosts = (props) => {
             <form className={style.postForm}>
                 <p className="title">My posts</p>
                 <textarea className={style.newText} placeholder="Your news..." rows="5" onChange={changeTextarea} value={props.newTextPost} ref={textareaElement}/>
-                <button type="submit" className={style.buttonSend} onClick={addPostItem}>Send</button>
+                <button type="button" className={style.buttonSend} onClick={addPostItem}>Send</button>
             </form>
             <div className={style.postList}>
 

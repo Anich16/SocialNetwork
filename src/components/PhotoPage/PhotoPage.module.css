@@ -1,0 +1,24 @@
+.photoList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.field {
+    width: 60%;
+    padding: 5px 10px;
+}
+.button {
+    background-color: #dada16;
+    color: #8b0000;
+    border: 1px solid #8b0000;
+    padding: 3px 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
