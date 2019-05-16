@@ -5,22 +5,22 @@ let initialState = {
     posts: [
         {
             id: 1,
-            url: "http://frozen-info.ru/img_biografija/Olaf.jpg",
+            url: "http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg",
             text: "I love hot hugs!)"
         },
         {
             id: 2,
-            url: "http://frozen-info.ru/img_biografija/Olaf.jpg",
+            url: "http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg",
             text: "This is my new page!!!"
         },
         {
             id: 3,
-            url: "http://frozen-info.ru/img_biografija/Olaf.jpg",
+            url: "http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg",
             text: "Hello, I'm Olaf! =)"
         }
     ],
     info: [{
-        photo: "http://frozen-info.ru/img_biografija/Olaf.jpg",
+        photo: "http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg",
         name: "Olaf",
         birthDay: "1 January",
         city: "Snagge, Canada",

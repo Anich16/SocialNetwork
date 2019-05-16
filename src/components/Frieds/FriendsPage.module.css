@@ -1,0 +1,35 @@
+.searchBlock {
+    margin: 10px 15px;
+}
+
+.search {
+    padding: 10px 5px;
+    width: 80%;
+}
+
+.friendsList {
+    margin-top: 25px;
+}
+
+.item {
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.photoBlock {
+    margin-right: 25px;
+    width: 70px;
+}
+
+.photo {
+    width: 50px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.text {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}

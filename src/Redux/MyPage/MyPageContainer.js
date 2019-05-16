@@ -5,7 +5,9 @@ import {addPostActionCreator, addPostTextActionCreator} from "./MyPage.reducer";
 
 let mapStateToProps = (state) => {
     return {
-        myPage: state.myPage
+        info: state.myPage.info,
+        posts: state.myPage.posts,
+        newTextPost: state.myPage.newTextPost
     }
 };
 

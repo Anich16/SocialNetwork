@@ -53,6 +53,7 @@ export let login = (author, password, rememberMe, captcha)=> (dispatch)=> {
 
             }
         })
+
 };
 
 export let setStatus =(status) => {

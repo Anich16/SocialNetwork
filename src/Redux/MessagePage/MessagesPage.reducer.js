@@ -37,7 +37,7 @@ let initialState = {
     messages: [
         {
             id: 1,
-            url: 'http://frozen-info.ru/img_biografija/Olaf.jpg',
+            url: 'http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg',
             text: 'Hello, I\'m Olaf! =)'
         },
         {
@@ -47,7 +47,7 @@ let initialState = {
         },
         {
             id: 3,
-            url: 'http://frozen-info.ru/img_biografija/Olaf.jpg',
+            url: 'http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg',
             text: 'Yes, why?'
         },
         {
@@ -57,7 +57,7 @@ let initialState = {
         },
         {
             id: 5,
-            url: 'http://frozen-info.ru/img_biografija/Olaf.jpg',
+            url: 'http://mamamozhetvse.ru/wp-content/uploads/2016/12/Olaf_Frozen-D-59.jpg',
             text: 'Summer? Awww ... I do not know why, but I am always thrilled when I think about summer and the sun, and everything hooooot.'
         },
     ],

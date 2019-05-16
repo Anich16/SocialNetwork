@@ -6,8 +6,7 @@ import style from "./MyPage.module.css";
 import PropTypes from "prop-types";
 
 let MyPage = (props) => {
-
-    let infoBlock = props.myPage.info.map((info, index) => {
+    let infoBlock = props.info.map((info, index) => {
         return <MyInfo  img = {info.photo} name={info.name} day={info.birthDay} city={info.city} site={info.webSite} key = {index}/>
     });
 
@@ -17,7 +16,7 @@ let MyPage = (props) => {
 
             {infoBlock}
 
-            <MyPosts posts={props.myPage.posts} newTextPost={props.newTextPost} addPost={props.addPost} addPostText={props.addPostText}/>
+            <MyPosts posts={props.posts} newTextPost={props.newTextPost} addPost={props.addPost} addPostText={props.addPostText}/>
         </div>
     )
 };
